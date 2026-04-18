@@ -192,6 +192,10 @@ footer {
   color: white;
 }
 
+.footer-wrapper {
+  width: 100%;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -284,7 +288,7 @@ footer {
     justify-content: flex-end;
   }
 
-  footer {
+  .footer-wrapper {
     display: flex;
     align-items: center;
   }
@@ -322,5 +326,55 @@ footer {
 
   .footer-image img {
     object-position: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .bg {
+    height: 100%;
+    transform: skewY(-15deg);
+  }
+
+  main,
+  .footer-wrapper {
+    max-width: 1024px;
+    margin-inline: auto;
+  }
+
+  #my-work h2 {
+    text-align: left;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    margin-inline: auto;
+  }
+
+  .about-image {
+    width: 40%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile-name {
+    top: auto;
+    bottom: 1.75rem;
+    left: 2.5rem;
+    font-size: 2.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about-content {
+    width: 60%;
+    margin-block-start: 0;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .about-content h2 {
+    text-align: left;
   }
 }
